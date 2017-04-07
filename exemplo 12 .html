@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<script>
+ function cuboDonumero(numero){
+  var cubo=numero*numero*numero;
+  return cubo;
+}
+ function evento(){
+  var num_valor = window.document.getElementById("num").value;
+  var resl ="o cubo do número é igual a "+cuboDonumero(num_valor);
+  window.document.getElementById("mensagem").innerHTML=resl ;
+}
+</script><center>
+</head>
+<body>
+<h1>retornando valor de uma função</h1>
+<table>
+<tr>
+<td width="150">digite um numero: </td>
+<td width="30"><input sype="text" digite um numero id="num" value=""size="3"/></td>
+</tr>
+<tr>
+<td width="30 colspan="2"align="center"><input type="button" value="caucula"onclick="evento()"></td>
+</tr>
+</table>
+<br>
+<p id="mensagem"></p>
+</body>
+
+</html>
