@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript">
+function alter_txt() {
+  var x = window.document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+  <h1>Javascript Eventos</h1>
+  <div>
+  Digite seu nome: <input type="text" id="fname"
+  onchange="alter_txt()"/>
+  <p>Clique fora da caixa de texto para alterar o texto em maiúsculo.</p>
+  </div>
+</body>
+</html>
